@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wabikay Photography – Capturing Stories. Preserving Legacy.</title>
+  <meta name="description" content="Lagos-based visual storytelling photography brand. Weddings, portraits, corporate events, documentary & more. Book your session today." />
+  <meta name="keywords" content="Lagos photographer, wedding photography Nigeria, portrait photography Lagos, documentary photography, Wabikay Photography" />
+  <meta property="og:title" content="Wabikay Photography – Capturing Stories. Preserving Legacy." />
+  <meta property="og:description" content="Timeless photography capturing weddings, celebrations, portraits, and documentary stories in Lagos, Nigeria." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111111" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #CBA135;
+      --gold-light: #d9b55a;
+      --black: #111111;
+      --white: #FAF9F6;
+      --gray: #E5E5E5;
+      --mid-gray: #888;
+      --dark-gray: #1e1e1e;
+      --section-gap: 7rem;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+    }
+    h1 { font-size: clamp(2.8rem, 7vw, 6rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3.4rem); }
+    h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+    p { font-size: clamp(0.88rem, 1.2vw, 1rem); color: #ccc; }
+
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+    .section { padding: var(--section-gap) 0; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2.4rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--black);
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+    }
+    .btn-ghost:hover { background: var(--gold); color: var(--black); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1.4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.4s ease;
+    }
+    nav.scrolled {
+      background: rgba(17,17,17,0.96);
+      backdrop-filter: blur(12px);
+      padding: 1rem 2rem;
+      border-bottom: 1px solid rgba(203,161,53,0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--white);
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2.2rem; align-items: center; }
+    .nav-links a {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #bbb;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-book {
+      font-size: 0.7rem !important;
+      padding: 0.6rem 1.5rem;
+      background: var(--gold);
+      color: var(--black) !important;
+      font-weight: 500 !important;
+    }
+    .nav-book:hover { background: var(--gold-light) !important; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-hamburger span { width: 24px; height: 1px; background: var(--white); transition: all 0.3s; }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close {
+      position: absolute;
+      top: 2rem; right: 2rem;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--white);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      overflow: hidden;
+    }
+    .hero-slides { position: absolute; inset: 0; }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 1.8s cubic-bezier(0.4,0,0.2,1);
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-slide.active { opacity: 1; }
+    .hero-slide::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(17,17,17,0.2) 0%, rgba(17,17,17,0.55) 60%, rgba(17,17,17,0.85) 100%);
+    }
+
+    /* Cinematic placeholder gradients – replace with real images */
+    .slide-1 { background: linear-gradient(135deg, #1a1208 0%, #2d1f0a 30%, #3d2c12 60%, #1a1208 100%); }
+    .slide-2 { background: linear-gradient(135deg, #0d1520 0%, #1a2535 30%, #0d1520 100%); }
+    .slide-3 { background: linear-gradient(135deg, #1a1010 0%, #2d1515 30%, #1a1010 100%); }
+    .slide-4 { background: linear-gradient(135deg, #0d180d 0%, #152815 30%, #0d180d 100%); }
+
+    /* Inner decorative elements to simulate photography */
+    .slide-1::before, .slide-2::before, .slide-3::before, .slide-4::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.18;
+    }
+    .slide-1::before {
+      background: radial-gradient(ellipse at 35% 45%, #CBA135 0%, transparent 55%),
+                  radial-gradient(ellipse at 75% 65%, #8B6914 0%, transparent 45%);
+    }
+    .slide-2::before {
+      background: radial-gradient(ellipse at 60% 40%, #4a6fa5 0%, transparent 50%),
+                  radial-gradient(ellipse at 30% 70%, #2a4a75 0%, transparent 45%);
+    }
+    .slide-3::before {
+      background: radial-gradient(ellipse at 50% 50%, #6b2020 0%, transparent 55%);
+    }
+    .slide-4::before {
+      background: radial-gradient(ellipse at 40% 45%, #1a5a1a 0%, transparent 50%),
+                  radial-gradient(ellipse at 70% 60%, #CBA135 0%, transparent 35%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 2rem 5rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease 0.3s forwards;
+    }
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      max-width: 820px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease 0.5s forwards;
+    }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-sub {
+      margin-top: 1.5rem;
+      font-size: clamp(0.88rem, 1.3vw, 1.05rem);
+      color: rgba(250,249,246,0.65);
+      max-width: 520px;
+      line-height: 1.7;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease 0.75s forwards;
+    }
+    .hero-actions {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease 1s forwards;
+    }
+
+    .hero-indicators {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      z-index: 3;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .hero-dot {
+      width: 24px;
+      height: 1px;
+      background: rgba(250,249,246,0.3);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .hero-dot.active { background: var(--gold); width: 40px; }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 1s ease 2s forwards;
+    }
+    .hero-scroll span { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease infinite;
+    }
+
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes scrollPulse { 0%,100% { opacity:0.4; transform: scaleY(1); } 50% { opacity:1; transform: scaleY(1.2); } }
+
+    /* ── ABOUT STRIP ── */
+    #about-strip {
+      background: var(--dark-gray);
+      padding: 5rem 0;
+      border-top: 1px solid rgba(203,161,53,0.15);
+      border-bottom: 1px solid rgba(203,161,53,0.15);
+    }
+    .about-strip-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-visual {
+      position: relative;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+    }
+    .about-visual-bg {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1e1508 0%, #3d2c12 50%, #1a1208 100%);
+      position: relative;
+    }
+    .about-visual-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 40% 45%, rgba(203,161,53,0.25) 0%, transparent 60%);
+    }
+    .about-frame {
+      position: absolute;
+      top: 1.5rem;
+      right: -1.5rem;
+      bottom: -1.5rem;
+      left: 1.5rem;
+      border: 1px solid rgba(203,161,53,0.3);
+      pointer-events: none;
+    }
+    .about-text { padding-right: 2rem; }
+    .about-text h2 { margin-bottom: 1.5rem; }
+    .about-text p { margin-bottom: 1.2rem; }
+    .about-sig {
+      margin-top: 2.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-style: italic;
+      color: var(--gold);
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid-gray); margin-top: 0.3rem; }
+
+    /* ── CATEGORIES ── */
+    #categories { background: var(--black); }
+    .categories-header { text-align: center; margin-bottom: 4rem; }
+    .categories-header h2 { margin-bottom: 1rem; }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+    }
+    .category-card {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      cursor: pointer;
+      group: true;
+    }
+    .category-bg {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+    }
+    .category-card:hover .category-bg { transform: scale(1.06); }
+
+    .cat-weddings .category-bg { background: linear-gradient(160deg, #1a1208, #3d2c12, #2d1f0a); }
+    .cat-celebrations .category-bg { background: linear-gradient(160deg, #0d1520, #1a3a5a, #0d1520); }
+    .cat-portraits .category-bg { background: linear-gradient(160deg, #200a0a, #3d1515, #1a0a0a); }
+    .cat-corporate .category-bg { background: linear-gradient(160deg, #0a0a20, #151535, #0a0a1a); }
+    .cat-church .category-bg { background: linear-gradient(160deg, #0a1a0a, #1a3a1a, #0a1a0a); }
+    .cat-documentary .category-bg { background: linear-gradient(160deg, #1a1208, #2d2010, #1a1208); }
+
+    .cat-weddings .category-bg::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 40%, rgba(203,161,53,0.3) 0%, transparent 60%); }
+    .cat-celebrations .category-bg::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 40%, rgba(74,111,165,0.4) 0%, transparent 60%); }
+    .cat-portraits .category-bg::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 35%, rgba(180,80,80,0.25) 0%, transparent 55%); }
+    .cat-corporate .category-bg::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 40%, rgba(100,100,200,0.25) 0%, transparent 60%); }
+    .cat-church .category-bg::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 50% 30%, rgba(203,161,53,0.2) 0%, transparent 55%), radial-gradient(ellipse at 50% 60%, rgba(50,150,50,0.15) 0%, transparent 40%); }
+    .cat-documentary .category-bg::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 40% 50%, rgba(203,161,53,0.15) 0%, transparent 50%); }
+
+    .category-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(17,17,17,0.9) 0%, rgba(17,17,17,0.3) 50%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      transition: background 0.4s;
+    }
+    .category-card:hover .category-overlay {
+      background: linear-gradient(to top, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.5) 60%, rgba(17,17,17,0.2) 100%);
+    }
+    .category-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.75rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+    .category-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--white);
+    }
+    .category-link {
+      margin-top: 0.8rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .category-link::after { content: '→'; }
+    .category-card:hover .category-link { opacity: 1; transform: translateY(0); }
+
+    /* ── PORTFOLIO ── */
+    #portfolio { background: var(--dark-gray); }
+    .portfolio-tabs {
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 3rem;
+      scrollbar-width: none;
+    }
+    .portfolio-tabs::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0;
+      padding: 1rem 1.8rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-family: 'Inter', sans-serif;
+    }
+    .tab-btn:hover { color: var(--white); }
+    .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+    .portfolio-panel { display: none; }
+    .portfolio-panel.active { display: block; }
+
+    .portfolio-notice {
+      background: rgba(203,161,53,0.07);
+      border: 1px solid rgba(203,161,53,0.2);
+      padding: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .portfolio-notice p { color: var(--mid-gray); font-size: 0.85rem; }
+    .portfolio-notice a { color: var(--gold); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 3px;
+    }
+    .gallery-item {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+    .gallery-item:nth-child(3n+2) { aspect-ratio: 3/4; }
+    .gallery-item:nth-child(5n+1) { aspect-ratio: 4/5; }
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+      position: relative;
+    }
+    .gallery-item:hover .gallery-placeholder { transform: scale(1.04); }
+    .gp-1 { background: linear-gradient(135deg, #1a1208, #3d2c12); }
+    .gp-2 { background: linear-gradient(135deg, #0d1520, #1a3a5a); }
+    .gp-3 { background: linear-gradient(135deg, #200a0a, #3d1515); }
+    .gp-4 { background: linear-gradient(135deg, #0a1a0a, #1a3a1a); }
+    .gp-5 { background: linear-gradient(135deg, #1a1208, #2d2010); }
+    .gp-6 { background: linear-gradient(135deg, #0a0a20, #151535); }
+    .gp-7 { background: linear-gradient(135deg, #1a1208, #4a3520); }
+    .gp-8 { background: linear-gradient(135deg, #0d1a2d, #1a3050); }
+
+    .gallery-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 45% 40%, rgba(203,161,53,0.18) 0%, transparent 55%);
+    }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(17,17,17,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+    }
+    .gallery-item:hover .gallery-overlay { background: rgba(17,17,17,0.45); }
+    .gallery-expand {
+      width: 44px; height: 44px;
+      border: 1px solid var(--white);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.3s;
+      color: var(--white);
+      font-size: 1.2rem;
+    }
+    .gallery-item:hover .gallery-expand { opacity: 1; transform: scale(1); }
+
+    /* ── SERVICES ── */
+    #services { background: var(--black); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .service-card {
+      padding: 3rem 2.5rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover { background: rgba(255,255,255,0.02); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      width: 48px; height: 48px;
+      border: 1px solid rgba(203,161,53,0.3);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+    }
+    .service-card h3 { font-size: 1.4rem; margin-bottom: 0.8rem; }
+    .service-card p { font-size: 0.85rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .service-link {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+    .service-link:hover { gap: 0.7rem; }
+    .service-link::after { content: '→'; }
+
+    /* ── PACKAGES ── */
+    #packages { background: var(--dark-gray); }
+    .packages-header { text-align: center; margin-bottom: 4rem; }
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .package-card {
+      padding: 3.5rem 2.5rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+      transition: border-color 0.3s;
+    }
+    .package-card.featured {
+      background: rgba(203,161,53,0.04);
+      border-color: rgba(203,161,53,0.3);
+    }
+    .package-badge {
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--black);
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 1.2rem;
+    }
+    .package-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    .package-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--gold);
+      margin: 1rem 0;
+      line-height: 1;
+    }
+    .package-price small {
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--mid-gray);
+    }
+    .package-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.5rem 0;
+    }
+    .package-features { list-style: none; margin-bottom: 2.5rem; }
+    .package-features li {
+      font-size: 0.85rem;
+      color: #bbb;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .package-features li::before { content: '✦'; color: var(--gold); font-size: 0.5rem; flex-shrink: 0; }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--black); overflow: hidden; }
+    .testimonials-inner { position: relative; }
+    .testimonial-track {
+      display: flex;
+      gap: 2rem;
+      transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .testimonial-card {
+      min-width: calc(50% - 1rem);
+      padding: 3rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      flex-shrink: 0;
+    }
+    .testimonial-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+    .testimonial-quote::before { content: '"'; color: var(--gold); font-size: 3rem; line-height: 0; vertical-align: -0.5rem; margin-right: 0.2rem; }
+    .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+    .author-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #8B6914);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--black);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .author-name { font-size: 0.9rem; font-weight: 500; color: var(--white); }
+    .author-event { font-size: 0.75rem; color: var(--mid-gray); margin-top: 0.15rem; }
+    .testimonial-stars { color: var(--gold); font-size: 0.75rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+    .testimonials-nav {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      justify-content: center;
+    }
+    .t-nav-btn {
+      width: 48px; height: 48px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+    .t-nav-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* ── BOOKING ── */
+    #booking { background: var(--dark-gray); }
+    .booking-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+    .booking-info h2 { margin-bottom: 1.5rem; }
+    .booking-info p { margin-bottom: 1.5rem; }
+    .booking-contacts { margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-item { display: flex; align-items: center; gap: 1rem; }
+    .contact-icon { color: var(--gold); font-size: 1.1rem; width: 20px; text-align: center; }
+    .contact-detail a { color: #ccc; font-size: 0.9rem; transition: color 0.2s; }
+    .contact-detail a:hover { color: var(--gold); }
+    .contact-label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid-gray); margin-bottom: 0.2rem; }
+
+    .booking-form { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); padding: 3rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      padding: 0.85rem 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+    }
+    .form-group select option { background: var(--dark-gray); color: var(--white); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: rgba(203,161,53,0.5);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit { width: 100%; margin-top: 0.5rem; }
+    .form-success { display: none; text-align: center; padding: 2rem; }
+    .form-success h3 { color: var(--gold); font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .form-success p { font-size: 0.85rem; }
+
+    .wa-booking-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      transition: all 0.2s;
+      margin-top: 1.2rem;
+      width: 100%;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+    }
+    .wa-booking-btn:hover { background: #20b858; transform: translateY(-1px); }
+
+    /* ── CLIENT GALLERY ── */
+    #client-gallery { background: var(--black); }
+    .gallery-portal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .gallery-portal-info h2 { margin-bottom: 1.2rem; }
+    .gallery-portal-info p { margin-bottom: 1.5rem; }
+    .gallery-login-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 3rem;
+    }
+    .gallery-login-box h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .gallery-login-box > p { font-size: 0.85rem; margin-bottom: 2rem; }
+    .gallery-features { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 2rem; }
+    .gallery-feat-item { display: flex; align-items: center; gap: 0.8rem; font-size: 0.82rem; color: #bbb; }
+    .gallery-feat-item::before { content: '✦'; color: var(--gold); font-size: 0.5rem; }
+
+    /* ── PHOTOBOOKS ── */
+    #photobooks { background: var(--dark-gray); }
+    .photobooks-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .photobook-card {
+      text-align: center;
+    }
+    .photobook-visual {
+      aspect-ratio: 3/4;
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .photobook-bg {
+      width: 100%; height: 100%;
+      background: linear-gradient(160deg, #1a1208, #3d2c12);
+      position: relative;
+      transition: transform 0.4s;
+    }
+    .photobook-card:hover .photobook-bg { transform: scale(1.03); }
+    .pb-1 { background: linear-gradient(160deg, #1a1208, #3d2c12) !important; }
+    .pb-2 { background: linear-gradient(160deg, #0a0a1a, #1a1a3a) !important; }
+    .pb-3 { background: linear-gradient(160deg, #0a1a0a, #1a3a1a) !important; }
+    .pb-4 { background: linear-gradient(160deg, #1a0a0a, #3a1a1a) !important; }
+    .photobook-bg::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 40%, rgba(203,161,53,0.2) 0%, transparent 60%); }
+    .photobook-icon {
+      position: absolute; bottom: 1rem; right: 1rem;
+      font-size: 2rem; opacity: 0.5;
+    }
+    .photobook-card h4 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    .photobook-card p { font-size: 0.78rem; color: var(--mid-gray); }
+
+    /* ── BLOG ── */
+    #blog { background: var(--black); }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .blog-card { cursor: pointer; }
+    .blog-image {
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .blog-img-bg {
+      width: 100%; height: 100%;
+      transition: transform 0.5s ease;
+    }
+    .blog-card:hover .blog-img-bg { transform: scale(1.04); }
+    .bi-1 { background: linear-gradient(135deg, #1a1208, #3d2c12); }
+    .bi-2 { background: linear-gradient(135deg, #0d1520, #1a3a5a); }
+    .bi-3 { background: linear-gradient(135deg, #0a1a0a, #1a4a1a); }
+    .bi-4 { background: linear-gradient(135deg, #200a0a, #3d1515); }
+    .bi-5 { background: linear-gradient(135deg, #1a1208, #2d2010); }
+    .bi-6 { background: linear-gradient(135deg, #0a0a20, #151535); }
+    .blog-img-bg::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 45% 40%, rgba(203,161,53,0.15) 0%, transparent 55%); }
+    .blog-cat {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .blog-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; line-height: 1.3; transition: color 0.2s; }
+    .blog-card:hover h3 { color: var(--gold); }
+    .blog-meta { font-size: 0.72rem; color: var(--mid-gray); }
+
+    /* ── CTA ── */
+    #cta {
+      background: var(--dark-gray);
+      text-align: center;
+      padding: 8rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(203,161,53,0.07) 0%, transparent 70%);
+    }
+    #cta h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1rem; position: relative; }
+    #cta p { font-size: 1rem; color: #999; margin-bottom: 2.5rem; position: relative; }
+    #cta .btn { position: relative; }
+    .cta-divider {
+      width: 60px; height: 1px;
+      background: var(--gold);
+      margin: 1.5rem auto;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--black); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+    }
+    .contact-info h2 { margin-bottom: 2rem; }
+    .contact-items { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 3rem; }
+    .contact-c { display: flex; gap: 1rem; align-items: flex-start; }
+    .contact-c-icon { color: var(--gold); font-size: 1.2rem; margin-top: 0.2rem; width: 24px; text-align: center; flex-shrink: 0; }
+    .contact-c-label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid-gray); margin-bottom: 0.2rem; }
+    .contact-c-val { color: #ccc; font-size: 0.9rem; }
+    .contact-c-val a { transition: color 0.2s; }
+    .contact-c-val a:hover { color: var(--gold); }
+    .social-row { display: flex; gap: 1rem; margin-top: 2rem; }
+    .social-btn {
+      width: 44px; height: 44px;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      color: #bbb;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .social-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .map-placeholder {
+      aspect-ratio: 16/9;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--mid-gray);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .contact-form-wrap { }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0a0a0a;
+      padding: 5rem 0 2rem;
+      border-top: 1px solid rgba(203,161,53,0.15);
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+    }
+    .footer-brand-name span { color: var(--gold); }
+    .footer-tagline {
+      font-size: 0.75rem;
+      color: var(--mid-gray);
+      letter-spacing: 0.08em;
+      margin-bottom: 1.5rem;
+    }
+    .footer-desc { font-size: 0.82rem; color: #666; line-height: 1.7; }
+    .footer-col h4 {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-links a { font-size: 0.82rem; color: #666; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 0.75rem; color: #444; }
+    .footer-copy a { color: var(--gold); }
+
+    /* ── FLOATING WA ── */
+    .wa-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 56px; height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 900;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s;
+      font-size: 1.5rem;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.95);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-content {
+      max-width: 90vw;
+      max-height: 90vh;
+      position: relative;
+    }
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: -3rem;
+      right: 0;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--white);
+      transition: color 0.2s;
+    }
+    .lightbox-close:hover { color: var(--gold); }
+    .lb-placeholder {
+      width: 700px;
+      max-width: 90vw;
+      aspect-ratio: 3/2;
+      background: linear-gradient(135deg, #1a1208, #3d2c12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mid-gray);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 2rem;
+    }
+    .lb-placeholder::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 45% 40%, rgba(203,161,53,0.15) 0%, transparent 60%); }
+
+    /* ── SECTION HEADER ── */
+    .section-header { margin-bottom: 4rem; }
+    .section-header.centered { text-align: center; }
+    .section-header h2 { margin-bottom: 1rem; }
+    .section-header p { max-width: 540px; font-size: 0.95rem; }
+    .section-header.centered p { margin: 0 auto; }
+    .gold-line {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.2rem 0;
+    }
+    .section-header.centered .gold-line { margin: 1.2rem auto; }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── MEDIA QUERIES ── */
+    @media (max-width: 1024px) {
+      .about-strip-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-visual { max-width: 500px; }
+      .about-text { padding-right: 0; }
+      .packages-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+      .photobooks-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section-gap: 5rem; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .categories-grid { grid-template-columns: repeat(2, 1fr); }
+      .booking-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .testimonial-card { min-width: calc(100% - 0px); }
+      .form-row { grid-template-columns: 1fr; }
+      .gallery-portal { grid-template-columns: 1fr; }
+      .about-stats { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 480px) {
+      .categories-grid { grid-template-columns: 1fr; }
+      .photobooks-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Wabikay<span>.</span></a>
+    <div class="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#blog">Journal</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="nav-book btn">Book Now</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" id="mobileClose">✕</span>
+    <a href="#portfolio" class="mobile-link">Portfolio</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#packages" class="mobile-link">Packages</a>
+    <a href="#booking" class="mobile-link">Book a Session</a>
+    <a href="#client-gallery" class="mobile-link">Client Gallery</a>
+    <a href="#blog" class="mobile-link">Journal</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide slide-1 active"></div>
+      <div class="hero-slide slide-2"></div>
+      <div class="hero-slide slide-3"></div>
+      <div class="hero-slide slide-4"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-eyebrow">Lagos, Nigeria · Visual Storytelling</div>
+      <h1 class="hero-title">Every Photograph<br>Has a <em>Story.</em></h1>
+      <p class="hero-sub">Timeless photography capturing weddings, celebrations, portraits, corporate events, and documentary stories across Nigeria and beyond.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-gold">View Portfolio</a>
+        <a href="#booking" class="btn btn-outline">Book a Session</a>
+      </div>
+    </div>
+    <div class="hero-indicators" id="heroIndicators">
+      <div class="hero-dot active" data-index="0"></div>
+      <div class="hero-dot" data-index="1"></div>
+      <div class="hero-dot" data-index="2"></div>
+      <div class="hero-dot" data-index="3"></div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section id="about-strip">
+    <div class="container">
+      <div class="about-strip-inner">
+        <div class="about-visual reveal">
+          <div class="about-visual-bg">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;opacity:0.4;font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);text-align:center;padding:2rem;">
+              <span style="font-size:2.5rem;">📷</span>
+              <span style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;">Replace with your photo</span>
+            </div>
+          </div>
+          <div class="about-frame"></div>
+        </div>
+        <div class="about-text reveal">
+          <span class="eyebrow">About Wabikay</span>
+          <h2>Where Light Meets <em style="font-style:italic;color:var(--gold);">Narrative</em></h2>
+          <div class="gold-line"></div>
+          <p>Wabikay Photography is a Lagos-based visual storytelling brand dedicated to capturing authentic moments, raw emotions, and cherished memories through the art of timeless photography.</p>
+          <p>Every assignment is approached with intention — from the golden hour of a wedding morning to the quiet intimacy of a documentary portrait. We don't just take photographs; we preserve the stories your children's children will one day hold.</p>
+          <p>With roots in Nigeria and a vision that transcends borders, Wabikay has become a trusted name for clients who value artistry, authenticity, and legacy.</p>
+          <div class="about-sig">Wabikay Photography</div>
+          <div class="about-stats">
+            <div>
+              <div class="stat-num">500+</div>
+              <div class="stat-label">Sessions Covered</div>
+            </div>
+            <div>
+              <div class="stat-num">8+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">Specializations</span>
+        <h2>Stories We Tell</h2>
+        <div class="gold-line"></div>
+        <p>From intimate wedding ceremonies to sweeping documentary narratives — each genre is handled with its own distinct voice and vision.</p>
+      </div>
+      <div class="categories-grid">
+        <a href="#portfolio" class="category-card cat-weddings" onclick="switchTab('weddings')">
+          <div class="category-bg"></div>
+          <div class="category-overlay">
+            <div class="category-num">01</div>
+            <div class="category-name">Weddings</div>
+            <div class="category-link">Explore</div>
+          </div>
+        </a>
+        <a href="#portfolio" class="category-card cat-celebrations" onclick="switchTab('celebrations')">
+          <div class="category-bg"></div>
+          <div class="category-overlay">
+            <div class="category-num">02</div>
+            <div class="category-name">Celebrations</div>
+            <div class="category-link">Explore</div>
+          </div>
+        </a>
+        <a href="#portfolio" class="category-card cat-portraits" onclick="switchTab('portraits')">
+          <div class="category-bg"></div>
+          <div class="category-overlay">
+            <div class="category-num">03</div>
+            <div class="category-name">Portraits</div>
+            <div class="category-link">Explore</div>
+          </div>
+        </a>
+        <a href="#portfolio" class="category-card cat-corporate" onclick="switchTab('corporate')">
+          <div class="category-bg"></div>
+          <div class="category-overlay">
+            <div class="category-num">04</div>
+            <div class="category-name">Corporate Events</div>
+            <div class="category-link">Explore</div>
+          </div>
+        </a>
+        <a href="#portfolio" class="category-card cat-church" onclick="switchTab('church')">
+          <div class="category-bg"></div>
+          <div class="category-overlay">
+            <div class="category-num">05</div>
+            <div class="category-name">Church Events</div>
+            <div class="category-link">Explore</div>
+          </div>
+        </a>
+        <a href="#portfolio" class="category-card cat-documentary" onclick="switchTab('documentary')">
+          <div class="category-bg"></div>
+          <div class="category-overlay">
+            <div class="category-num">06</div>
+            <div class="category-name">Documentary</div>
+            <div class="category-link">Explore</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>The Work</h2>
+        <div class="gold-line"></div>
+        <p>A curated selection from across our body of work. Replace placeholder images with your actual photography.</p>
+      </div>
+      <div class="portfolio-tabs" id="portfolioTabs">
+        <button class="tab-btn active" data-tab="weddings">Weddings</button>
+        <button class="tab-btn" data-tab="celebrations">Celebrations</button>
+        <button class="tab-btn" data-tab="portraits">Portraits</button>
+        <button class="tab-btn" data-tab="corporate">Corporate</button>
+        <button class="tab-btn" data-tab="church">Church Events</button>
+        <button class="tab-btn" data-tab="documentary">Documentary</button>
+      </div>
+
+      <!-- Weddings -->
+      <div class="portfolio-panel active" id="panel-weddings">
+        <div class="portfolio-notice">
+          <p>🔗 <strong style="color:var(--gold);">Google Photos Integration:</strong> Replace this gallery with your Google Photos album embed, or add direct image URLs below. <a href="https://photos.google.com" target="_blank">Add your album link here</a></p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-1"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-2"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-3"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-4"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-5"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-6"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-7"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-8"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+        </div>
+      </div>
+
+      <!-- Celebrations -->
+      <div class="portfolio-panel" id="panel-celebrations">
+        <div class="portfolio-notice"><p>🔗 <strong style="color:var(--gold);">Celebrations Album:</strong> Add your Google Photos album or image URLs here.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-2"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-5"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-8"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-3"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-6"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-1"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+        </div>
+      </div>
+
+      <!-- Portraits -->
+      <div class="portfolio-panel" id="panel-portraits">
+        <div class="portfolio-notice"><p>🔗 <strong style="color:var(--gold);">Portraits Album:</strong> Add your Google Photos album or image URLs here.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-3"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-7"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-1"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-4"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-6"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-2"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+        </div>
+      </div>
+
+      <!-- Corporate -->
+      <div class="portfolio-panel" id="panel-corporate">
+        <div class="portfolio-notice"><p>🔗 <strong style="color:var(--gold);">Corporate Album:</strong> Add your Google Photos album or image URLs here.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-6"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-4"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-2"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-8"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-5"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-1"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+        </div>
+      </div>
+
+      <!-- Church -->
+      <div class="portfolio-panel" id="panel-church">
+        <div class="portfolio-notice"><p>🔗 <strong style="color:var(--gold);">Church Events Album:</strong> Add your Google Photos album or image URLs here.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-4"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-1"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-7"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-3"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-5"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-2"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+        </div>
+      </div>
+
+      <!-- Documentary -->
+      <div class="portfolio-panel" id="panel-documentary">
+        <div class="portfolio-notice"><p>🔗 <strong style="color:var(--gold);">Documentary Album:</strong> Add your Google Photos album or image URLs here.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-5"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-3"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-7"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-2"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-6"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+          <div class="gallery-item" onclick="openLightbox(this)"><div class="gallery-placeholder gp-8"></div><div class="gallery-overlay"><div class="gallery-expand">+</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">What We Offer</span>
+        <h2>Photography Services</h2>
+        <div class="gold-line"></div>
+        <p>Every service is delivered with meticulous attention to detail, ensuring your moments are preserved with the artistry they deserve.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">💍</div>
+          <h3>Wedding Photography</h3>
+          <p>Complete wedding day coverage from preparation through reception. We capture every heartfelt glance, every tear of joy, every dance — telling the full story of your day.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎉</div>
+          <h3>Celebration Coverage</h3>
+          <p>Birthdays, anniversaries, naming ceremonies, graduations, and more. Life's milestones deserve more than phone snapshots — they deserve to be remembered beautifully.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🧍</div>
+          <h3>Portrait Photography</h3>
+          <p>Individual and family portraits that reveal character. Whether editorial, personal branding, or family legacy, we create images that feel timeless and deeply personal.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🏢</div>
+          <h3>Corporate Photography</h3>
+          <p>Professional headshots, corporate events, conferences, and brand photography. Make your business look as polished and credible as it deserves to be.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">⛪</div>
+          <h3>Church Event Photography</h3>
+          <p>Services, crusades, dedications, ordinations, and church celebrations. We approach faith events with the reverence and sensitivity they command.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📽</div>
+          <h3>Documentary Photography</h3>
+          <p>Long-form documentary and photojournalism projects. We embed deeply, observe patiently, and create images that speak truth about the human experience.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📖</div>
+          <h3>Photobooks & Prints</h3>
+          <p>Premium heirloom photobooks, canvas prints, framed art prints, and acrylic displays. Transform your favourite images into tangible objects of beauty.</p>
+          <a href="#photobooks" class="service-link">View Options</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">✨</div>
+          <h3>Content Creation</h3>
+          <p>Lifestyle content, social media photography, and visual brand storytelling for individuals and businesses who want to show up with intention.</p>
+          <a href="#booking" class="service-link">Book This Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="section">
+    <div class="container">
+      <div class="packages-header reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Photography Packages</h2>
+        <div class="gold-line" style="margin:1.2rem auto;"></div>
+        <p style="color:#999;max-width:500px;margin:0 auto;">Clear, honest pricing with no hidden fees. Every package is crafted to deliver exceptional value and unforgettable results.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card reveal">
+          <div class="package-name">Signature Celebration</div>
+          <p style="font-size:0.78rem;color:var(--mid-gray);margin-top:0.2rem;">Experience</p>
+          <div class="package-price">₦250,000</div>
+          <div class="package-divider"></div>
+          <ul class="package-features">
+            <li>Full event day coverage</li>
+            <li>Up to 6 hours on-location</li>
+            <li>150+ professionally edited photos</li>
+            <li>Private online gallery</li>
+            <li>High-resolution downloads</li>
+            <li>14-day delivery</li>
+          </ul>
+          <a href="#booking" class="btn btn-outline" style="width:100%;text-align:center;">Book Package</a>
+        </div>
+
+        <div class="package-card featured reveal">
+          <div class="package-badge">Most Popular</div>
+          <div class="package-name">Golden Year</div>
+          <p style="font-size:0.78rem;color:var(--mid-gray);margin-top:0.2rem;">Experience</p>
+          <div class="package-price">₦350,000</div>
+          <div class="package-divider"></div>
+          <ul class="package-features">
+            <li>Premium full-day coverage</li>
+            <li>Up to 10 hours on-location</li>
+            <li>250+ professionally edited photos</li>
+            <li>Fast-track delivery (7 days)</li>
+            <li>Highlight image selection (25)</li>
+            <li>Private online gallery</li>
+            <li>Optional photobook add-on</li>
+          </ul>
+          <a href="#booking" class="btn btn-gold" style="width:100%;text-align:center;">Book Package</a>
+        </div>
+
+        <div class="package-card reveal">
+          <div class="package-name">Wedding</div>
+          <p style="font-size:0.78rem;color:var(--mid-gray);margin-top:0.2rem;">Experience</p>
+          <div class="package-price" style="font-size:2rem;">Custom</div>
+          <div class="package-divider"></div>
+          <ul class="package-features">
+            <li>Full wedding coverage (all day)</li>
+            <li>Pre-wedding consultation</li>
+            <li>Engagement session included</li>
+            <li>400+ premium edited photos</li>
+            <li>Premium online gallery</li>
+            <li>Express 5-day turnaround</li>
+            <li>Heirloom photobook included</li>
+            <li>Print-ready files</li>
+          </ul>
+          <a href="https://wa.me/2348149139188?text=Hi%20Wabikay,%20I'd%20like%20to%20discuss%20Wedding%20Photography%20pricing." target="_blank" class="btn btn-ghost" style="width:100%;text-align:center;">Request Quote</a>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--mid-gray);font-size:0.78rem;margin-top:2rem;">All packages include travel within Lagos. Custom packages available for destination events. <a href="#contact" style="color:var(--gold);">Get in touch</a> to discuss your specific needs.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Client Love</span>
+        <h2>What They Say</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="testimonials-inner">
+        <div style="overflow:hidden;">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-quote">Wabikay didn't just photograph our wedding — they captured the very soul of it. Every image tells a story I didn't even know was happening in that moment. Looking back at these photos, I weep with gratitude.</div>
+              <div class="testimonial-author">
+                <div class="author-avatar">A</div>
+                <div>
+                  <div class="author-name">Adaeze & Chukwuemeka</div>
+                  <div class="author-event">Wedding · Lekki, Lagos · 2025</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-quote">The portraits they created for our family are absolute masterpieces. The team was professional, patient with our children, and somehow made everyone look effortlessly natural. These will hang in our home for generations.</div>
+              <div class="testimonial-author">
+                <div class="author-avatar">T</div>
+                <div>
+                  <div class="author-name">The Adeyemi Family</div>
+                  <div class="author-event">Family Portrait Session · Victoria Island · 2025</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-quote">Our corporate conference looked absolutely world-class in the coverage Wabikay delivered. Fast turnaround, exceptional quality, and a team that understood exactly what we needed without us having to explain twice.</div>
+              <div class="testimonial-author">
+                <div class="author-avatar">O</div>
+                <div>
+                  <div class="author-name">Oluwaseun Okafor</div>
+                  <div class="author-event">Corporate Event · Eko Hotel, Lagos · 2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-quote">From the moment I saw the proofs I couldn't stop crying — in the best way possible. My 50th birthday celebration photos are the most precious thing I own. You have a gift that goes beyond just photography.</div>
+              <div class="testimonial-author">
+                <div class="author-avatar">F</div>
+                <div>
+                  <div class="author-name">Funmilayo Bello</div>
+                  <div class="author-event">Birthday Celebration · Ikoyi · 2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button class="t-nav-btn" id="tPrev" aria-label="Previous">←</button>
+          <button class="t-nav-btn" id="tNext" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="section">
+    <div class="container">
+      <div class="booking-inner">
+        <div class="booking-info reveal">
+          <span class="eyebrow">Let's Work Together</span>
+          <h2>Book a Session</h2>
+          <div class="gold-line"></div>
+          <p>Ready to have your story told? Fill out the form and we'll be in touch within 24 hours to discuss your vision, availability, and everything in between.</p>
+          <p>Prefer a quick chat? Reach us directly on WhatsApp for the fastest response.</p>
+          <div class="booking-contacts">
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-detail"><a href="tel:+2348149139188">+234 814 913 9188</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-detail"><a href="mailto:wabikay@gmail.com">wabikay@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <div class="contact-label">Based In</div>
+                <div class="contact-detail" style="color:#ccc;">Lagos, Nigeria</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="booking-form" id="bookingFormWrap">
+            <div id="bookingFormContent">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" placeholder="+234 000 000 0000" required />
+                </div>
+                <div class="form-group">
+                  <label for="eventType">Event Type *</label>
+                  <select id="eventType" required>
+                    <option value="">Select event type</option>
+                    <option>Wedding</option>
+                    <option>Celebration / Birthday</option>
+                    <option>Portrait Session</option>
+                    <option>Corporate Event</option>
+                    <option>Church Event</option>
+                    <option>Documentary Project</option>
+                    <option>Content Creation</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="eventDate">Event Date</label>
+                  <input type="date" id="eventDate" />
+                </div>
+                <div class="form-group">
+                  <label for="budget">Approximate Budget</label>
+                  <select id="budget">
+                    <option value="">Select a range</option>
+                    <option>₦100,000 – ₦200,000</option>
+                    <option>₦200,000 – ₦350,000</option>
+                    <option>₦350,000 – ₦500,000</option>
+                    <option>₦500,000+</option>
+                    <option>Custom / Let's Discuss</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="location">Event Location</label>
+                <input type="text" id="location" placeholder="City, venue name or address" />
+              </div>
+              <div class="form-group">
+                <label for="message">Tell Me About Your Vision</label>
+                <textarea id="message" placeholder="Describe your event, the mood you want, any special requirements..."></textarea>
+              </div>
+              <button class="btn btn-gold form-submit" onclick="submitBookingForm()">Send Inquiry →</button>
+              <a href="https://wa.me/2348149139188?text=Hi%20Wabikay!%20I'd%20like%20to%20book%20a%20photography%20session." target="_blank" class="wa-booking-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Book via WhatsApp
+              </a>
+            </div>
+            <div class="form-success" id="formSuccess">
+              <div style="font-size:2.5rem;margin-bottom:1rem;">✨</div>
+              <h3>Inquiry Received!</h3>
+              <p>Thank you for reaching out. We'll be in touch within 24 hours to discuss your vision.</p>
+              <p style="margin-top:1rem;font-size:0.78rem;color:var(--mid-gray);">For urgent inquiries, WhatsApp us at <a href="https://wa.me/2348149139188" style="color:var(--gold);">+234 814 913 9188</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT GALLERY -->
+  <section id="client-gallery" class="section">
+    <div class="container">
+      <div class="gallery-portal">
+        <div class="gallery-portal-info reveal">
+          <span class="eyebrow">Private Access</span>
+          <h2>Client Gallery Portal</h2>
+          <div class="gold-line"></div>
+          <p>After your session, you'll receive exclusive access to your private gallery — a curated collection of your finest images, ready to download, share, and cherish.</p>
+          <p>Each gallery is password-protected and accessible for 90 days, with options to order prints directly.</p>
+          <div class="gallery-features">
+            <div class="gallery-feat-item">View & download high-resolution photos</div>
+            <div class="gallery-feat-item">Share your gallery with family & friends</div>
+            <div class="gallery-feat-item">Request premium prints & photobooks</div>
+            <div class="gallery-feat-item">90-day gallery access window</div>
+            <div class="gallery-feat-item">Secure, password-protected access</div>
+          </div>
+        </div>
+        <div class="gallery-login-box reveal">
+          <span class="eyebrow">Access Your Gallery</span>
+          <h3>Client Login</h3>
+          <p>Enter the access code provided in your delivery email to view your private gallery.</p>
+          <div class="form-group">
+            <label>Your Name or Email</label>
+            <input type="text" placeholder="Enter your name or email" />
+          </div>
+          <div class="form-group">
+            <label>Gallery Access Code</label>
+            <input type="password" placeholder="Enter your access code" />
+          </div>
+          <button class="btn btn-gold" style="width:100%;" onclick="alert('Client gallery portal coming soon! Your access code will be provided after your session delivery.')">Access My Gallery →</button>
+          <p style="font-size:0.75rem;color:var(--mid-gray);text-align:center;margin-top:1.2rem;">Don't have your access code? <a href="https://wa.me/2348149139188" target="_blank" style="color:var(--gold);">Contact us on WhatsApp</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOBOOKS & PRINTS -->
+  <section id="photobooks" class="section">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="eyebrow">Fine Art Products</span>
+        <h2>Photobooks & Prints</h2>
+        <div class="gold-line"></div>
+        <p>Transform your photographs into heirloom-quality physical products that you'll pass down through generations.</p>
+      </div>
+      <div class="photobooks-grid">
+        <div class="photobook-card reveal">
+          <div class="photobook-visual">
+            <div class="photobook-bg pb-1"></div>
+            <div class="photobook-icon">📖</div>
+          </div>
+          <h4>Heirloom Photobooks</h4>
+          <p>Lay-flat, premium-bound albums with archival paper</p>
+        </div>
+        <div class="photobook-card reveal">
+          <div class="photobook-visual">
+            <div class="photobook-bg pb-2"></div>
+            <div class="photobook-icon">🖼</div>
+          </div>
+          <h4>Canvas Prints</h4>
+          <p>Gallery-wrapped canvas prints in custom sizes</p>
+        </div>
+        <div class="photobook-card reveal">
+          <div class="photobook-visual">
+            <div class="photobook-bg pb-3"></div>
+            <div class="photobook-icon">🪟</div>
+          </div>
+          <h4>Framed Fine Art</h4>
+          <p>Museum-quality frames with archival matte prints</p>
+        </div>
+        <div class="photobook-card reveal">
+          <div class="photobook-visual">
+            <div class="photobook-bg pb-4"></div>
+            <div class="photobook-icon">💎</div>
+          </div>
+          <h4>Acrylic Prints</h4>
+          <p>Vibrant, ultra-modern acrylic face-mount prints</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3.5rem;">
+        <p style="font-size:0.9rem;color:#999;margin-bottom:1.5rem;">Interested in a specific product? Let's discuss sizing, pricing, and design options.</p>
+        <a href="https://wa.me/2348149139188?text=Hi!%20I'm%20interested%20in%20ordering%20prints%20or%20a%20photobook." target="_blank" class="btn btn-ghost">Enquire About Prints</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">The Journal</span>
+        <h2>Stories Behind the Stories</h2>
+        <div class="gold-line"></div>
+        <p>Behind the scenes, photography philosophy, and the human stories that fuel our work.</p>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card reveal">
+          <div class="blog-image">
+            <div class="blog-img-bg bi-1"></div>
+          </div>
+          <div class="blog-cat">Weddings</div>
+          <h3>What Makes a Wedding Photo Truly Timeless?</h3>
+          <div class="blog-meta">June 2026 · 5 min read</div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-image">
+            <div class="blog-img-bg bi-2"></div>
+          </div>
+          <div class="blog-cat">Photography Tips</div>
+          <h3>How to Prepare for Your Portrait Session</h3>
+          <div class="blog-meta">May 2026 · 4 min read</div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-image">
+            <div class="blog-img-bg bi-3"></div>
+          </div>
+          <div class="blog-cat">Documentary</div>
+          <h3>Photographing Lagos: The City That Never Sleeps</h3>
+          <div class="blog-meta">April 2026 · 7 min read</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="#blog" class="btn btn-outline">Read All Stories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <span class="eyebrow" style="display:block;text-align:center;">Begin Your Story</span>
+      <h2>Ready to Tell <em style="font-style:italic;color:var(--gold);">Your Story?</em></h2>
+      <div class="cta-divider"></div>
+      <p>Every great photograph begins with a single conversation. Let's talk about yours.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#booking" class="btn btn-gold">Book Now</a>
+        <a href="https://wa.me/2348149139188?text=Hi%20Wabikay!%20I'd%20love%20to%20learn%20more%20about%20your%20photography%20services." target="_blank" class="btn btn-outline">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Contact Us</h2>
+          <div class="gold-line"></div>
+          <div class="contact-items">
+            <div class="contact-c">
+              <span class="contact-c-icon">📞</span>
+              <div>
+                <div class="contact-c-label">Phone</div>
+                <div class="contact-c-val"><a href="tel:+2348149139188">+234 814 913 9188</a></div>
+              </div>
+            </div>
+            <div class="contact-c">
+              <span class="contact-c-icon">✉️</span>
+              <div>
+                <div class="contact-c-label">Email</div>
+                <div class="contact-c-val"><a href="mailto:wabikay@gmail.com">wabikay@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-c">
+              <span class="contact-c-icon">📍</span>
+              <div>
+                <div class="contact-c-label">Location</div>
+                <div class="contact-c-val">Lagos, Nigeria</div>
+              </div>
+            </div>
+            <div class="contact-c">
+              <span class="contact-c-icon">📸</span>
+              <div>
+                <div class="contact-c-label">Instagram</div>
+                <div class="contact-c-val"><a href="https://www.instagram.com/lightandnarrative" target="_blank">@lightandnarrative</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="social-row">
+            <a href="https://www.instagram.com/lightandnarrative" target="_blank" class="social-btn" title="Instagram">📸</a>
+            <a href="https://wa.me/2348149139188" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+            <a href="mailto:wabikay@gmail.com" class="social-btn" title="Email">✉️</a>
+          </div>
+          <div class="map-placeholder">
+            <div>
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;">📍</div>
+              <div>Lagos, Nigeria</div>
+              <div style="font-size:0.72rem;margin-top:0.3rem;color:#555;">Replace with Google Maps embed for exact location</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <div class="booking-form">
+            <div style="margin-bottom:2rem;">
+              <span class="eyebrow">Send a Message</span>
+              <h3 style="font-size:1.6rem;">Let's Connect</h3>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Full name" />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="How can we help you?" style="min-height:150px;"></textarea>
+            </div>
+            <button class="btn btn-gold" style="width:100%;">Send Message →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Wabikay<span>.</span></div>
+          <div class="footer-tagline">Capturing Stories. Preserving Legacy.</div>
+          <p class="footer-desc">Lagos-based visual storytelling photography brand dedicated to capturing authentic moments and timeless memories across Nigeria and beyond.</p>
+          <div style="display:flex;gap:0.8rem;margin-top:1.5rem;">
+            <a href="https://www.instagram.com/lightandnarrative" target="_blank" class="social-btn">📸</a>
+            <a href="https://wa.me/2348149139188" target="_blank" class="social-btn">💬</a>
+            <a href="mailto:wabikay@gmail.com" class="social-btn">✉️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Portfolio</h4>
+          <ul class="footer-links">
+            <li><a href="#portfolio">Weddings</a></li>
+            <li><a href="#portfolio">Celebrations</a></li>
+            <li><a href="#portfolio">Portraits</a></li>
+            <li><a href="#portfolio">Corporate</a></li>
+            <li><a href="#portfolio">Church Events</a></li>
+            <li><a href="#portfolio">Documentary</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Wedding Photography</a></li>
+            <li><a href="#services">Celebration Coverage</a></li>
+            <li><a href="#services">Portrait Sessions</a></li>
+            <li><a href="#services">Corporate Events</a></li>
+            <li><a href="#photobooks">Photobooks & Prints</a></li>
+            <li><a href="#services">Content Creation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+2348149139188">+234 814 913 9188</a></li>
+            <li><a href="mailto:wabikay@gmail.com">wabikay@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/lightandnarrative" target="_blank">@lightandnarrative</a></li>
+            <li><a href="https://wa.me/2348149139188" target="_blank">WhatsApp Us</a></li>
+            <li><a href="#booking">Book a Session</a></li>
+            <li><a href="#client-gallery">Client Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Wabikay Photography · Lagos, Nigeria · All rights reserved</div>
+        <div class="footer-copy">Made with ❤️ for <a href="#">Wabikay Photography</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/2348149139188?text=Hi%20Wabikay!%20I'd%20like%20to%20learn%20more%20about%20your%20photography%20services." target="_blank" class="wa-float" title="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+      <div class="lb-placeholder">
+        <div>
+          <div style="font-size:2rem;margin-bottom:0.5rem;position:relative;z-index:1;">📷</div>
+          <div style="position:relative;z-index:1;">Replace placeholder with actual image src</div>
+          <div style="font-size:0.72rem;color:#555;margin-top:0.3rem;position:relative;z-index:1;">Add real images to gallery items</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ── NAV SCROLL ──
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ── MOBILE MENU ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // ── HERO SLIDESHOW ──
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    let currentSlide = 0;
+    let slideTimer;
+
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+    function startSlideshow() {
+      slideTimer = setInterval(() => goToSlide(currentSlide + 1), 5000);
+    }
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        clearInterval(slideTimer);
+        goToSlide(parseInt(dot.dataset.index));
+        startSlideshow();
+      });
+    });
+    startSlideshow();
+
+    // ── PORTFOLIO TABS ──
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.tab === tabName);
+      });
+      document.querySelectorAll('.portfolio-panel').forEach(p => {
+        p.classList.toggle('active', p.id === 'panel-' + tabName);
+      });
+    }
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+    });
+
+    // ── TESTIMONIALS SLIDER ──
+    const track = document.getElementById('testimonialTrack');
+    let tIndex = 0;
+    const tCards = track.querySelectorAll('.testimonial-card');
+    const tVisible = window.innerWidth < 768 ? 1 : 2;
+
+    function updateTestimonials() {
+      const gap = 32;
+      const cardW = track.parentElement.offsetWidth;
+      const perCard = window.innerWidth < 768 ? cardW : (cardW - gap) / 2;
+      const offset = tIndex * (perCard + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+    }
+    document.getElementById('tNext').addEventListener('click', () => {
+      const max = tCards.length - (window.innerWidth < 768 ? 1 : 2);
+      tIndex = Math.min(tIndex + 1, max);
+      updateTestimonials();
+    });
+    document.getElementById('tPrev').addEventListener('click', () => {
+      tIndex = Math.max(tIndex - 1, 0);
+      updateTestimonials();
+    });
+    window.addEventListener('resize', updateTestimonials);
+
+    // ── SCROLL REVEAL ──
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── LIGHTBOX ──
+    function openLightbox(item) {
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(event) {
+      if (!event || event.target === document.getElementById('lightbox') || event.currentTarget.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // ── BOOKING FORM ──
+    function submitBookingForm() {
+      const name = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const eventType = document.getElementById('eventType').value;
+      if (!name || !email || !phone || !eventType) {
+        alert('Please fill in all required fields (Name, Email, Phone, and Event Type).');
+        return;
+      }
+      // Simulate submission
+      document.getElementById('bookingFormContent').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+      // In production, send to your backend or use a service like Formspree, EmailJS, etc.
+      // Example: fetch('/api/booking', { method: 'POST', body: JSON.stringify({name, email, phone, eventType}) })
+    }
+
+    // ── SMOOTH SCROLL FOR ANCHOR LINKS ──
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
